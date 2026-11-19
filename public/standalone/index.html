@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StudyMate AI — Standalone HTML + JS + Node + Python Edition</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #f8f7f4;
+        --surface: #ffffff;
+        --border: #e6e4dd;
+        --ink: #14151a;
+        --muted: #5c606b;
+        --accent: #3b4fe4;
+        --accent-soft: #eef0ff;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+        background: var(--bg);
+        color: var(--ink);
+      }
+      header {
+        background: var(--surface);
+        border-bottom: 1px solid var(--border);
+        padding: 16px 28px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-weight: 700;
+        font-size: 18px;
+      }
+      .badge {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 12px;
+        padding: 4px 10px;
+        border-radius: 999px;
+        background: var(--accent-soft);
+        color: var(--accent);
+        font-weight: 600;
+      }
+      main {
+        max-width: 1120px;
+        margin: 28px auto;
+        padding: 0 20px;
+        display: grid;
+        grid-template-columns: 1fr 1.15fr;
+        gap: 24px;
+      }
+      @media (max-width: 860px) {
+        main {
+          grid-template-columns: 1fr;
+        }
+      }
+      .card {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 22px;
+      }
+      label {
+        display: block;
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: var(--muted);
+        margin-bottom: 6px;
+      }
+      input,
+      textarea {
+        width: 100%;
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        padding: 10px 12px;
+        font: inherit;
+        font-size: 14px;
+        margin-bottom: 14px;
+      }
+      textarea {
+        min-height: 190px;
+        resize: vertical;
+        line-height: 1.55;
+      }
+      button {
+        background: var(--accent);
+        color: #fff;
+        border: 0;
+        border-radius: 10px;
+        padding: 11px 18px;
+        font: inherit;
+        font-weight: 600;
+        cursor: pointer;
+      }
+      .pill-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin: 10px 0 18px;
+      }
+      .pill {
+        background: var(--accent-soft);
+        color: var(--accent);
+        padding: 4px 10px;
+        border-radius: 999px;
+        font-size: 12px;
+        font-weight: 600;
+      }
+      .flashcard {
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 14px;
+        margin-bottom: 10px;
+        background: #fcfbf9;
+      }
+      .flashcard strong {
+        display: block;
+        margin-bottom: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="brand">
+        <span>StudyMate AI</span>
+        <span class="badge" id="engineStatus">Checking Node + Python...</span>
+      </div>
+      <a href="/" style="color: var(--accent); font-weight: 600; text-decoration: none; font-size: 14px"
+        >Back to Full Interactive App &rarr;</a
+      >
+    </header>
+    <main>
+      <section class="card">
+        <h2 style="margin-top: 0; font-size: 18px">Course Notes Input</h2>
+        <label for="topicTitle">Lecture Title</label>
+        <input id="topicTitle" value="Gradient Descent & Backpropagation" />
+        <label for="notesInput">Paste Study Notes</label>
+        <textarea id="notesInput">Backpropagation is an algorithm that computes exact partial derivatives of a loss function with respect to neural network weights via the chain rule. Gradient descent updates parameters iteratively in the opposite direction of the gradient scaled by a learning rate alpha. Regularization methods such as dropout and weight decay prevent overfitting on training batches. Batch normalization stabilizes hidden layer activations and accelerates convergence across deep architectures.</textarea>
+        <button id="analyzeBtn" type="button">Synthesize with Node.js + Python</button>
+      </section>
+      <section class="card">
+        <h2 style="margin-top: 0; font-size: 18px">AI Synthesis Output</h2>
+        <div id="outputContainer" style="font-size: 14px; line-height: 1.6; color: var(--muted)">
+          Click <strong>Synthesize with Node.js + Python</strong> to generate summaries, key concepts, and SM-2 flashcards.
+        </div>
+      </section>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>

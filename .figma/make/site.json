@@ -1,0 +1,11 @@
+{
+  "title": "studymate AI",
+  "description": "An AI study companion that helps students organize coursework, access learning support, and study more effectively.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
