@@ -87,42 +87,4 @@ pnpm dev
 node backend/node/server.mjs
 ```
 
-## 🧠 Learning & Development Goals
 
-- Improve programming and software development skills.
-- Explore Python and Artificial Intelligence.
-- Understand Natural Language Processing concepts.
-- Develop practical web applications.
-- Build technology that makes education more accessible.
-
-## 🗺️ Future Plans
-
-- [ ] Complete frontend and backend integration.
-- [ ] Add PDF note uploading.
-- [ ] Implement user authentication.
-- [ ] Introduce personalized learning progress.
-- [ ] Improve quiz generation and performance tracking.
-- [ ] Explore AI-powered tutoring features.
-
-## 👨‍💻 Developer
-
-**Subhadeep Majumder**
-
-BCA Student | Siliguri Institute of Technology
-
-Interested in:
-- Python Programming
-- Artificial Intelligence & Machine Learning
-- Web Development
-- Software Engineering
-
-**Connect with me:**
-
-- GitHub: [Subhadeep Majumder](https://github.com/majumdersubhadeep107-coder)
-- LinkedIn: [Connect on LinkedIn](https://www.linkedin.com/in/subhadeep-majumder-895384273/)
-
----
-
-⭐ If you find this project interesting, consider giving it a star!
-
-*Learning, building, and growing one project at a time.*
