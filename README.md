@@ -1,69 +1,48 @@
-# StudyMate AI 📚
+# 📚 StudyMate AI
 
-### Your learning companion for smarter and more organized studying.
+### Your Smart Companion for Learning, Revision & Academic Productivity.
 
-StudyMate AI is an educational software project exploring how programming and lightweight natural-language processing can make studying more structured and interactive.
+StudyMate AI is an educational web application project designed to make studying more organized, interactive and productive. It explores how technology, programming and Artificial Intelligence concepts can support smarter learning.
 
-The project includes a React + TypeScript frontend scaffold, a Python study engine, a browser-side TypeScript engine, and a Node.js backend gateway.
+The project focuses on transforming study notes into summaries, flashcards, quizzes and personalized revision plans.
 
-> **Status:** Work in Progress 🚧
+> 🚧 **Project Status:** Currently under development.
 
 ## ✨ Features
 
-- 📝 **Smart Note Analysis** – Extract keywords and generate concise summaries.
-- 🗂️ **Flashcard Generation** – Create active-recall flashcards from study notes.
-- 🧠 **Quiz Generation** – Generate multiple-choice questions from learning material.
-- 📅 **Study Planner** – Generate topic-focused revision plans.
-- 🔁 **Spaced Repetition** – Calculate review intervals using the SM-2 algorithm.
-- 🤖 **Study Assistant** – Explore direct and Socratic-style study guidance.
+- 📝 **Smart Notes Analysis** – Extract important keywords and generate concise summaries.
+- 🧠 **Flashcard Generation** – Create flashcards for active learning and revision.
+- 🎯 **Interactive Quizzes** – Generate multiple-choice questions from study notes.
+- 📅 **Smart Study Planner** – Organize revision with topic-based study plans.
+- 🔄 **Spaced Repetition** – Use the SM-2 algorithm to calculate review intervals.
+- 🤖 **Study Assistant** – Explore direct and Socratic-style learning assistance.
 
-## 🛠️ Tech Stack
+## 🛠️ Technologies Used
 
 | Technology | Purpose |
 |---|---|
-| React | Frontend |
+| React | Frontend development |
 | TypeScript | Application logic |
 | Python | Study processing engine |
 | Node.js | Backend gateway |
-| Tailwind CSS | Styling |
-| Vite | Development and build |
+| Tailwind CSS | UI styling |
+| Vite | Development and build tool |
 | Lucide React | Icons |
-
-## 🧠 How It Works
-
-StudyMate AI explores two study-engine implementations:
-
-**Python Engine**
-- Keyword extraction
-- Extractive summarization
-- Flashcard generation
-- Quiz generation
-- Study planning
-- SM-2 scheduling
-
-**TypeScript Engine**
-- Browser-side study processing
-- Local note analysis
-- Typed study results
-- API integration helpers
-
-**Node.js Gateway**
-
-Connects HTTP requests to the Python study engine.
-
-*Note: Current processing is rule-based and extractive, not powered by a hosted generative-AI model.*
 
 ## 📂 Project Structure
 
 ```text
 BuildStudyMateAIApp/
+│
 ├── backend/
 │   ├── node/
 │   │   └── server.mjs
 │   └── python/
 │       └── studymate_engine.py
+│
 ├── public/
 │   └── standalone/
+│
 ├── src/
 │   ├── components/
 │   ├── data/
@@ -71,60 +50,59 @@ BuildStudyMateAIApp/
 │   │   └── studyEngine.ts
 │   ├── App.tsx
 │   └── main.tsx
+│
 ├── package.json
 └── vite.config.ts
 ```
 
-## 🚀 Getting Started
+## 🚀 Installation & Setup
 
-### Prerequisites
-- Node.js compatible with Vite 8
-- pnpm
-- Python 3
-
-### Installation
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/majumdersubhadeep107-coder/BuildStudyMateAIApp.git
+```
 
+### 2. Navigate to the project
+
+```bash
 cd BuildStudyMateAIApp
+```
 
+### 3. Install dependencies
+
+```bash
 pnpm install
 ```
 
-### Run the frontend
+### 4. Start the development server
 
 ```bash
 pnpm dev
 ```
 
-### Run the backend
+### 5. Run the backend gateway
 
 ```bash
 node backend/node/server.mjs
 ```
 
-The Node.js gateway runs on port 4050 by default.
+## 🧠 Learning & Development Goals
 
-### Production build
+- Improve programming and software development skills.
+- Explore Python and Artificial Intelligence.
+- Understand Natural Language Processing concepts.
+- Develop practical web applications.
+- Build technology that makes education more accessible.
 
-```bash
-pnpm build
-```
+## 🗺️ Future Plans
 
-## 🗺️ Future Improvements
-
-- [ ] Complete frontend and study-engine integration.
-- [ ] Add user authentication.
-- [ ] Add PDF note uploads.
-- [ ] Implement personalized learning progress.
-- [ ] Improve quiz generation.
-- [ ] Add topic-wise performance tracking.
-- [ ] Improve AI-powered tutoring capabilities.
-
-## ⚠️ Project Notes
-
-This is a student development project currently under active development. Some frontend screens and sample course data are demonstration content. Generated study material should be verified against original learning resources.
+- [ ] Complete frontend and backend integration.
+- [ ] Add PDF note uploading.
+- [ ] Implement user authentication.
+- [ ] Introduce personalized learning progress.
+- [ ] Improve quiz generation and performance tracking.
+- [ ] Explore AI-powered tutoring features.
 
 ## 👨‍💻 Developer
 
@@ -132,9 +110,19 @@ This is a student development project currently under active development. Some f
 
 BCA Student | Siliguri Institute of Technology
 
-- GitHub: [@majumdersubhadeep107-coder](https://github.com/majumdersubhadeep107-coder)
-- LinkedIn: [Connect with me](https://www.linkedin.com/in/subhadeep-majumder-895384273/)
+Interested in:
+- Python Programming
+- Artificial Intelligence & Machine Learning
+- Web Development
+- Software Engineering
+
+**Connect with me:**
+
+- GitHub: [Subhadeep Majumder](https://github.com/majumdersubhadeep107-coder)
+- LinkedIn: [Connect on LinkedIn](https://www.linkedin.com/in/subhadeep-majumder-895384273/)
 
 ---
 
-⭐ Learning, building, and improving one project at a time.
+⭐ If you find this project interesting, consider giving it a star!
+
+*Learning, building, and growing one project at a time.*
